@@ -154,7 +154,7 @@ height:20px;
 <script>
     var urlquery = location.search;
 console.log(urlquery);
-var res = urlquery.slice(5, 120);
+var res = urlquery.slice(5, 120000);
 console.log(res);
 </script>
 <button id="printerbtn" onclick="PrintPDF()"><i class="material-icons">printer</i></button>
@@ -271,5 +271,6 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 </script>
 
 <canvas id="the-canvas"></canvas>
+<title>Open Webdesign Germany PDF-Viewer</title>
 </body>
 </html>
