@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139193886-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-139193886-5');
-</script>
-
-      <script src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -157,7 +147,7 @@ console.log(urlquery);
 var res = urlquery.slice(5, 120000);
 console.log(res);
 </script>
-<button id="printerbtn" onclick="PrintPDF()"><i class="material-icons">printer</i></button>
+<button id="printerbtn" onclick="window.print()"><i class="material-icons">printer</i></button>
 
 <canvas id="the-canvas"></canvas>
 <!--PDF.js-->
